@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Aulas</title>
+
+    <style>
+        body {
+            background-image: url("971586.jpg");
+            background-size: cover;
+        }
+
+        .container {
+            margin: auto;
+            position: relative;
+            width: 640px;
+            height: 360px;
+        }
+
+        .video {
+            width: 100%;
+        }
+
+        .controle {
+            position: absolute;
+            opacity: 0%;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .btn {
+            position: relative;
+            width: 60px;
+            padding: 10px;
+            top: 100%;
+            transform: translateY(-100%);
+            cursor: pointer;
+        }
+
+        .controle:hover {
+            opacity: 100%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <video id="video1" class="video"
+            src="./Luffy (One Piece) EDIT - Só Pode Haver Um Rei Dos Piratas! - ItachiSanStatus.mp4">
+
+        </video>
+
+        <div class="controle">
+            <img class="btn" onclick="retroceder()" src="./voltar.png">
+            <img class="btn" onclick="diminuir_vel()" src="./negativo.png">
+            <img class="btn" onclick="play()" src="./play.png">
+            <img class="btn" onclick="stop()" src="./pause.png">
+            <img class="btn" onclick="avancar()" src="./frente.png">
+            <img class="btn" onclick="aumentar_vel()" src="./simbolo-de-mais.png">
+
+
+
+
+
+        </div>
+
+    </div>
+
+    <script src="script.js">
+
+    </script>
+
+</body>
+
+</html>
